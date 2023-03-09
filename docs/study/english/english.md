@@ -2,7 +2,7 @@
 
 ## 音标
 
-<iframe id="iframe" height=1850 width=80% frameborder=0 allowfullscreen="true" src="/video/english.html"></iframe>
+<iframe id="iframe" height=1850 width=80% frameborder=0 allowfullscreen="true" src="../../video/english.html"></iframe>
 <script>
 function iframeLoad() {
     console.log("加载")

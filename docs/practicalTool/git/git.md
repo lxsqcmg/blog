@@ -216,7 +216,12 @@ git stash apply stash@{2}
 git stash pop
 ```
 
-## 11. 代码提交规范
+## 将远程设置为上游分支
+```git
+git push --set-upstream origin gh-pages
+```
+
+## 代码提交规范
 
 - **feat**：提交新功能
 - **fix**：修复了bug

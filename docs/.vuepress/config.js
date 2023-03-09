@@ -13,11 +13,11 @@ module.exports = {
           { text: "基础理论", link: "/frameDoc/mianshi/" },
           { text: "HTML", link: "/frameDoc/html/" },
           { text: "CSS", link: "/frameDoc/css/css.md" },
-          { text: "JavaScript", link: "/frameDoc/javaScript/javaScript.md" },
-          { text: "TypeScript", link: "/frameDoc/typeScript/typeScript.md" },
-          { text: "Vue", link: "/frameDoc/vue2/vue2.md" },
-          { text: "Vue3", link: "/frameDoc/vue3/vue3.md" },
-          { text: "React", link: "/frameDoc/react/react.md" },
+          { text: "JavaScript", link: "/frameDoc/javaScript/" },
+          { text: "TypeScript", link: "/frameDoc/typeScript/" },
+          // { text: "Vue", link: "/frameDoc/vue2/vue2.md" },
+          { text: "Vue3", link: "/frameDoc/vue3/" },
+          // { text: "React", link: "/frameDoc/react/react.md" },
         ],
       },
       {
@@ -45,9 +45,15 @@ module.exports = {
             ],
           },
           {
-            text: "科学上网",
+            text: "书籍",
             items: [
-              { text: "工具", link: "/packTool/webpack/" },
+              { text: "书籍", link: "/study/books/books.md" },
+            ],
+          },
+          {
+            text: "资源",
+            items: [
+              { text: "资源", link: "/study/other/other.md" },
             ],
           },
         ],
@@ -71,15 +77,15 @@ module.exports = {
       // CSS
       "/frameDoc/css/": ["css"],
       // javaScript
-      "/frameDoc/javaScript/": ["javaScript"],
+      "/frameDoc/javaScript/": ["","Map","Set","Symbol"],
       // typeScript
-      "/frameDoc/typeScript/": ["typeScript"],
+      "/frameDoc/typeScript/": [""],
       // vue2
-      "/frameDoc/vue2/": ["vue2"],
+      // "/frameDoc/vue2/": ["vue2"],
       // vue3
-      "/frameDoc/vue3/": ["vue3"],
+      "/frameDoc/vue3/": [""],
       // react
-      "/frameDoc/react/": ["react"],
+      // "/frameDoc/react/": ["react"],
 
       /**
        * 服务端文档
@@ -119,6 +125,10 @@ module.exports = {
        */
       // 英语
       "/study/english/": ["english"],
+      //书籍
+      "/study/books/": ["books"],
+      // 资源
+      "/study/other/": ["other"]
 
       
     },
