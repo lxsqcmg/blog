@@ -12,7 +12,7 @@ module.exports = {
         items: [
           { text: "基础理论", link: "/frameDoc/mianshi/" },
           { text: "HTML", link: "/frameDoc/html/" },
-          { text: "CSS", link: "/frameDoc/css/css.md" },
+          { text: "CSS", link: "/frameDoc/css/flex.md" },
           { text: "JavaScript", link: "/frameDoc/javaScript/" },
           { text: "TypeScript", link: "/frameDoc/typeScript/" },
           // { text: "Vue", link: "/frameDoc/vue2/vue2.md" },
@@ -31,7 +31,7 @@ module.exports = {
       {
         text: "实用工具",
         items: [
-          { text: "Git", link: "/practicalTool/git/git.md" },
+          { text: "Git基本使用", link: "/practicalTool/git/git.md" },
           { text: "nodeJS版本控制", link: "/practicalTool/nodeJS/nodeJS.md" },
         ],
       },
@@ -41,7 +41,7 @@ module.exports = {
           {
             text: "学习",
             items: [
-              { text: "英语", link: "/study/english/english.md" },
+              { text: "英语", link: "/study/english/" },
             ],
           },
           {
@@ -75,7 +75,7 @@ module.exports = {
       // html
       "/frameDoc/html/": ["", "form", "table"],
       // CSS
-      "/frameDoc/css/": ["css"],
+      "/frameDoc/css/": ["flex","media"],
       // javaScript
       "/frameDoc/javaScript/": ["","Map","Set","Symbol"],
       // typeScript
@@ -91,7 +91,7 @@ module.exports = {
        * 服务端文档
        */
       // nodeJS
-      "/serverDoc/nodeJS/": ["", "nodeJS"],
+      "/serverDoc/nodeJS/": ["", ],
 
       /**
        * 打包工具
@@ -124,7 +124,7 @@ module.exports = {
        * 杂项
        */
       // 英语
-      "/study/english/": ["english"],
+      "/study/english/": ["","yinbiao","word","spoken","grammar"],
       //书籍
       "/study/books/": ["books"],
       // 资源

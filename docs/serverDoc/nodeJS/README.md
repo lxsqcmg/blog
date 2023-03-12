@@ -6,4 +6,6 @@ prev: /
 
 ## 基本应用
 
-nodeJS哈哈哈哈
+### 安装下载
+[ https://nodejs.org/zh-cn/]( https://nodejs.org/zh-cn/)
+

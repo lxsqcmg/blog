@@ -1,6 +1,6 @@
-# 英语学习笔记
+# 音标
 
-## 音标
+>视频来源：小红书
 
 <iframe id="iframe" height=1850 width=80% frameborder=0 allowfullscreen="true" src="../../video/english.html"></iframe>
 <script>
@@ -16,11 +16,3 @@ window.onload = function () {
     }, 0);
 }
 </script>
-
-## 单词
-
-单词分类
-
-## 语法
-
-基本语法
