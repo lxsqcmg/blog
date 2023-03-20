@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AJAX | 木子李的松</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="lxs的个人技术站">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.b243d80c.css" as="style"><link rel="preload" href="/blog/assets/js/app.152ee9b2.js" as="script"><link rel="preload" href="/blog/assets/js/2.5f29daaa.js" as="script"><link rel="preload" href="/blog/assets/js/30.a75b591a.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.653498b1.js"><link rel="prefetch" href="/blog/assets/js/11.e4ec7ea6.js"><link rel="prefetch" href="/blog/assets/js/12.4b2e80f6.js"><link rel="prefetch" href="/blog/assets/js/13.408f2a9f.js"><link rel="prefetch" href="/blog/assets/js/14.26cd72e4.js"><link rel="prefetch" href="/blog/assets/js/15.63c2f69e.js"><link rel="prefetch" href="/blog/assets/js/16.97bc94cd.js"><link rel="prefetch" href="/blog/assets/js/17.3bb977d4.js"><link rel="prefetch" href="/blog/assets/js/18.12fe2232.js"><link rel="prefetch" href="/blog/assets/js/19.08344e32.js"><link rel="prefetch" href="/blog/assets/js/20.1fa35e88.js"><link rel="prefetch" href="/blog/assets/js/21.fbb18e1d.js"><link rel="prefetch" href="/blog/assets/js/22.2fe8fca9.js"><link rel="prefetch" href="/blog/assets/js/23.3af91c75.js"><link rel="prefetch" href="/blog/assets/js/24.fed724c6.js"><link rel="prefetch" href="/blog/assets/js/25.1fb04a79.js"><link rel="prefetch" href="/blog/assets/js/26.0d188f7a.js"><link rel="prefetch" href="/blog/assets/js/27.cce34b8c.js"><link rel="prefetch" href="/blog/assets/js/28.3f18751d.js"><link rel="prefetch" href="/blog/assets/js/29.5ab9f419.js"><link rel="prefetch" href="/blog/assets/js/3.9d01f4aa.js"><link rel="prefetch" href="/blog/assets/js/31.489ae680.js"><link rel="prefetch" href="/blog/assets/js/32.41221556.js"><link rel="prefetch" href="/blog/assets/js/33.fada6da8.js"><link rel="prefetch" href="/blog/assets/js/34.c3c8403d.js"><link rel="prefetch" href="/blog/assets/js/35.a8bd61ad.js"><link rel="prefetch" href="/blog/assets/js/36.80a6e16f.js"><link rel="prefetch" href="/blog/assets/js/37.81dd248b.js"><link rel="prefetch" href="/blog/assets/js/38.6f8607c6.js"><link rel="prefetch" href="/blog/assets/js/39.4692956a.js"><link rel="prefetch" href="/blog/assets/js/4.ddaed15a.js"><link rel="prefetch" href="/blog/assets/js/40.d488aed6.js"><link rel="prefetch" href="/blog/assets/js/41.ea49bffc.js"><link rel="prefetch" href="/blog/assets/js/42.db9542b0.js"><link rel="prefetch" href="/blog/assets/js/43.02e4e3ba.js"><link rel="prefetch" href="/blog/assets/js/44.bc09587c.js"><link rel="prefetch" href="/blog/assets/js/45.dd7fec01.js"><link rel="prefetch" href="/blog/assets/js/46.a2af38ee.js"><link rel="prefetch" href="/blog/assets/js/47.f56071f9.js"><link rel="prefetch" href="/blog/assets/js/48.6f1a41c0.js"><link rel="prefetch" href="/blog/assets/js/49.ab374152.js"><link rel="prefetch" href="/blog/assets/js/5.47b29a67.js"><link rel="prefetch" href="/blog/assets/js/50.a9dc2525.js"><link rel="prefetch" href="/blog/assets/js/51.1e79aae1.js"><link rel="prefetch" href="/blog/assets/js/52.00fdca78.js"><link rel="prefetch" href="/blog/assets/js/53.4200d9a4.js"><link rel="prefetch" href="/blog/assets/js/54.9b3bc970.js"><link rel="prefetch" href="/blog/assets/js/6.476ece85.js"><link rel="prefetch" href="/blog/assets/js/7.0877afac.js"><link rel="prefetch" href="/blog/assets/js/8.d832b1bf.js"><link rel="prefetch" href="/blog/assets/js/9.95cddddf.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.b243d80c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">木子李的松</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端框架文档" class="dropdown-title"><span class="title">前端框架文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端框架文档" class="mobile-dropdown-title"><span class="title">前端框架文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/frameDoc/mianshi/" class="nav-link router-link-active">
+  基础理论
+</a></li><li class="dropdown-item"><!----> <a href="/blog/frameDoc/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/frameDoc/css/flex.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/frameDoc/javaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/frameDoc/typeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/frameDoc/vue3/" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端文档" class="dropdown-title"><span class="title">服务端文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端文档" class="mobile-dropdown-title"><span class="title">服务端文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/serverDoc/mySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/blog/serverDoc/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/blog/serverDoc/nodeJS/" class="nav-link">
+  NodeJS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="打包工具" class="dropdown-title"><span class="title">打包工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="打包工具" class="mobile-dropdown-title"><span class="title">打包工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/packTool/webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/practicalTool/git/git.html" class="nav-link">
+  Git基本使用
+</a></li><li class="dropdown-item"><!----> <a href="/blog/practicalTool/nodeJS/nodeJS.html" class="nav-link">
+  nodeJS版本控制
+</a></li><li class="dropdown-item"><!----> <a href="/blog/practicalTool/pdfjs/pdfjs.html" class="nav-link">
+  pdf.js
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂项" class="dropdown-title"><span class="title">杂项</span> <span class="arrow down"></span></button> <button type="button" aria-label="杂项" class="mobile-dropdown-title"><span class="title">杂项</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/study/english/" class="nav-link">
+  英语
+</a></li></ul></li><li class="dropdown-item"><h4>
+          书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/study/books/books.html" class="nav-link">
+  书籍
+</a></li></ul></li><li class="dropdown-item"><h4>
+          资源
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/study/other/other.html" class="nav-link">
+  资源
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/lxsqcmg/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端框架文档" class="dropdown-title"><span class="title">前端框架文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端框架文档" class="mobile-dropdown-title"><span class="title">前端框架文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/frameDoc/mianshi/" class="nav-link router-link-active">
+  基础理论
+</a></li><li class="dropdown-item"><!----> <a href="/blog/frameDoc/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/frameDoc/css/flex.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/frameDoc/javaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/frameDoc/typeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/frameDoc/vue3/" class="nav-link">
+  Vue3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="服务端文档" class="dropdown-title"><span class="title">服务端文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="服务端文档" class="mobile-dropdown-title"><span class="title">服务端文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/serverDoc/mySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/blog/serverDoc/linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/blog/serverDoc/nodeJS/" class="nav-link">
+  NodeJS
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="打包工具" class="dropdown-title"><span class="title">打包工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="打包工具" class="mobile-dropdown-title"><span class="title">打包工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/packTool/webpack/" class="nav-link">
+  Webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/practicalTool/git/git.html" class="nav-link">
+  Git基本使用
+</a></li><li class="dropdown-item"><!----> <a href="/blog/practicalTool/nodeJS/nodeJS.html" class="nav-link">
+  nodeJS版本控制
+</a></li><li class="dropdown-item"><!----> <a href="/blog/practicalTool/pdfjs/pdfjs.html" class="nav-link">
+  pdf.js
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="杂项" class="dropdown-title"><span class="title">杂项</span> <span class="arrow down"></span></button> <button type="button" aria-label="杂项" class="mobile-dropdown-title"><span class="title">杂项</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/study/english/" class="nav-link">
+  英语
+</a></li></ul></li><li class="dropdown-item"><h4>
+          书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/study/books/books.html" class="nav-link">
+  书籍
+</a></li></ul></li><li class="dropdown-item"><h4>
+          资源
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/study/other/other.html" class="nav-link">
+  资源
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/lxsqcmg/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/frameDoc/mianshi/" aria-current="page" class="sidebar-link">H5-CSS3-JS</a></li><li><a href="/blog/frameDoc/mianshi/Vue.html" class="sidebar-link">Vue</a></li><li><a href="/blog/frameDoc/mianshi/http.html" class="sidebar-link">HTTP</a></li><li><a href="/blog/frameDoc/mianshi/ajax.html" aria-current="page" class="active sidebar-link">AJAX</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/frameDoc/mianshi/ajax.html#_1-什么是ajax" class="sidebar-link">1.什么是AJAX</a></li><li class="sidebar-sub-header"><a href="/blog/frameDoc/mianshi/ajax.html#_2-原生-ajax-请求处理" class="sidebar-link">2.原生 AJAX 请求处理</a></li><li class="sidebar-sub-header"><a href="/blog/frameDoc/mianshi/ajax.html#_3-请解释一下-javascript-的同源策略" class="sidebar-link">3.请解释一下 JavaScript 的同源策略</a></li><li class="sidebar-sub-header"><a href="/blog/frameDoc/mianshi/ajax.html#_4-如何解决跨域问题" class="sidebar-link">4. 如何解决跨域问题</a></li></ul></li><li><a href="/blog/frameDoc/mianshi/browser.html" class="sidebar-link">浏览器缓存于渲染机制</a></li><li><a href="/blog/frameDoc/mianshi/React.html" class="sidebar-link">React</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="ajax"><a href="#ajax" class="header-anchor">#</a> AJAX</h1> <h2 id="_1-什么是ajax"><a href="#_1-什么是ajax" class="header-anchor">#</a> 1.什么是AJAX</h2> <ol><li><p>AJAX 是 『Asynchronous JavaScript and XML』的缩写。它是指一种创建交互式网页应用的网页开发技术。</p></li> <li><p>客户端与服务器，可以在<strong>不刷新整个浏览器</strong>的情况下，与服务器进行异步通讯的技术</p></li></ol> <h2 id="_2-原生-ajax-请求处理"><a href="#_2-原生-ajax-请求处理" class="header-anchor">#</a> 2.原生 AJAX 请求处理</h2> <table><thead><tr><th>方法/属性</th> <th>描述</th></tr></thead> <tbody><tr><td>open(method,url,async)</td> <td>规定请求的类型、URL 以及是否异步处理请求。<br><strong>method</strong>：请求的类型；GET 或 POST<br><strong>url</strong>：文件在服务器上的位置<br><strong>async</strong>：true（异步）或 false（同步）</td></tr> <tr><td>send(string)</td> <td>将请求发送到服务器。string：仅用于 POST 请求</td></tr> <tr><td>status</td> <td>200: &quot;OK&quot;</td></tr> <tr><td>responseText</td> <td>获得字符串形式的响应数据。</td></tr> <tr><td>responseXML</td> <td>获得 XML 形式的响应数据。</td></tr> <tr><td>readyState</td> <td>存有 XMLHttpRequest 的状态。请求发送到后台后，状态会从 0 到 4 发生变化。 <br> <strong>0</strong>: 请求未初始化   <br><strong>1</strong>: 服务器连接已建立   <br><strong>2</strong>: 请求已接收   <br><strong>3</strong>: 请求处理中   <br><strong>4</strong>: 请求已完成，且响应已就绪</td></tr> <tr><td>onreadystatechange</td> <td>每当 readyState 属性改变时，就会调用该函数。</td></tr></tbody></table> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// get请求</span>
+<span class="token comment">// 1.创建对象</span>
+<span class="token keyword">var</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 2.连接服务器，设置（请求参数，请求地址，同步还是异步）</span>
+xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'GET'</span><span class="token punctuation">,</span> <span class="token string">'/api/user?id=333'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 3.发送请求</span>
+xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 4.监听事件，获取返回的数据</span>
+xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span> <span class="token operator">&amp;&amp;</span> xhr<span class="token punctuation">.</span>status <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// post请求</span>
+<span class="token comment">// 1.创建对象</span>
+<span class="token keyword">var</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 2.连接服务器，设置（请求参数，请求地址，同步还是异步）</span>
+xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'POST'</span><span class="token punctuation">,</span> <span class="token string">'/api/user'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 3.POST请求需要设置此参数（设置请求头）</span>
+xhr<span class="token punctuation">.</span><span class="token function">setRequestHeader</span><span class="token punctuation">(</span><span class="token string">'Content-type'</span><span class="token punctuation">,</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">)</span>
+<span class="token comment">// 4.发送请求</span>
+xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'name=33&amp;ks=334'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 5.监听事件，获取返回的数据</span>
+xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span> <span class="token operator">&amp;&amp;</span> xhr<span class="token punctuation">.</span>status <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="_3-请解释一下-javascript-的同源策略"><a href="#_3-请解释一下-javascript-的同源策略" class="header-anchor">#</a> 3.请解释一下 JavaScript 的同源策略</h2> <p>同源策略指的是：协议，域名，端口相同，<strong>同源策略是一种安全协议，指一段脚本只能读取来自同一来源的窗口和文档的属性</strong>。</p> <h2 id="_4-如何解决跨域问题"><a href="#_4-如何解决跨域问题" class="header-anchor">#</a> 4. 如何解决跨域问题</h2> <p><strong>1. 跨域的概念：</strong></p> <p>协议、域名、端口都相同才同域，否则都是跨域</p> <p><strong>2. 解决跨域问题：</strong></p> <p>1). 使用JSONP（json+padding）把数据内填充起来
+2). CORS 方式（跨域资源共享），在后端上配置可跨域
+3). 服务器代理，通过服务器的文件能访问第三方资源（比如nginx）</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/frameDoc/mianshi/http.html" class="prev">
+        HTTP
+      </a></span> <span class="next"><a href="/blog/frameDoc/mianshi/browser.html">
+        浏览器缓存于渲染机制
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.152ee9b2.js" defer></script><script src="/blog/assets/js/2.5f29daaa.js" defer></script><script src="/blog/assets/js/30.a75b591a.js" defer></script>
+  </body>
+</html>
