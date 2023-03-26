@@ -2,6 +2,9 @@ module.exports = {
   title: "木子李的松",
   description: "lxs的个人技术站",
   base: "/blog/",
+  markdown: {
+    lineNumbers: true
+  },
 
   // 主题配置
   themeConfig: {
@@ -22,7 +25,11 @@ module.exports = {
       },
       {
         text: "服务端文档",
-        items: [{ text: "NodeJS", link: "/serverDoc/nodeJS/" }],
+        items: [
+          { text: "MySQL", link: "/serverDoc/mySQL/" },
+          { text: "Linux", link: "/serverDoc/linux/" },
+          { text: "NodeJS", link: "/serverDoc/nodeJS/" },
+        ],
       },
       {
         text: "打包工具",
@@ -33,6 +40,7 @@ module.exports = {
         items: [
           { text: "Git基本使用", link: "/practicalTool/git/git.md" },
           { text: "nodeJS版本控制", link: "/practicalTool/nodeJS/nodeJS.md" },
+          { text: "pdf.js", link: "/practicalTool/pdfjs/pdfjs.md" },
         ],
       },
       {
@@ -40,21 +48,15 @@ module.exports = {
         items: [
           {
             text: "学习",
-            items: [
-              { text: "英语", link: "/study/english/" },
-            ],
+            items: [{ text: "英语", link: "/study/english/" }],
           },
           {
             text: "书籍",
-            items: [
-              { text: "书籍", link: "/study/books/books.md" },
-            ],
+            items: [{ text: "书籍", link: "/study/books/books.md" }],
           },
           {
             text: "资源",
-            items: [
-              { text: "资源", link: "/study/other/other.md" },
-            ],
+            items: [{ text: "资源", link: "/study/other/other.md" }],
           },
         ],
       },
@@ -75,9 +77,9 @@ module.exports = {
       // html
       "/frameDoc/html/": ["", "form", "table"],
       // CSS
-      "/frameDoc/css/": ["flex","media"],
+      "/frameDoc/css/": ["flex", "media"],
       // javaScript
-      "/frameDoc/javaScript/": ["","Map","Set","Symbol"],
+      "/frameDoc/javaScript/": ["", "Map", "Set", "Symbol"],
       // typeScript
       "/frameDoc/typeScript/": [""],
       // vue2
@@ -90,8 +92,12 @@ module.exports = {
       /**
        * 服务端文档
        */
+      // mySQL
+      "/serverDoc/mySQL/": ["","基本操作"],
+      // linux
+      "/serverDoc/linux/": ["","文件权限与目录"],
       // nodeJS
-      "/serverDoc/nodeJS/": ["", ],
+      "/serverDoc/nodeJS/": [""],
 
       /**
        * 打包工具
@@ -118,19 +124,18 @@ module.exports = {
       "/practicalTool/git/": ["git"],
       // nodeJS版本控制
       "/practicalTool/nodeJS/": ["nodeJS"],
-
+      // pdfjs
+      "/practicalTool/pdfjs/":["pdfjs"],
 
       /**
        * 杂项
        */
       // 英语
-      "/study/english/": ["","yinbiao","word","spoken","grammar"],
+      "/study/english/": ["", "yinbiao", "word", "spoken", "grammar"],
       //书籍
       "/study/books/": ["books"],
       // 资源
-      "/study/other/": ["other"]
-
-      
+      "/study/other/": ["other"],
     },
 
     // 侧边栏嵌套最大深度
