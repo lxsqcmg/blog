@@ -1,0 +1,10 @@
+https://lxsqcmg.github.io/blog/frameDoc/mianshi/Vue.html
+https://lxsqcmg.github.io/blog/frameDoc/mianshi/http.html
+https://lxsqcmg.github.io/blog/frameDoc/mianshi/ajax.html
+https://lxsqcmg.github.io/blog/frameDoc/mianshi/browser.html
+https://lxsqcmg.github.io/blog/serverDoc/mySQL/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.html
+https://lxsqcmg.github.io/blog/packTool/webpack/static.html
+https://lxsqcmg.github.io/blog/practicalTool/git/git.html
+https://lxsqcmg.github.io/blog/practicalTool/nodeJS/nodeJS.html
+https://lxsqcmg.github.io/blog/practicalTool/pdfjs/pdfjs.html
+https://lxsqcmg.github.io/blog/study/english/word.html
