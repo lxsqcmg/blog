@@ -1,6 +1,8 @@
 name: Automated API Tests
 
-on: [push, pull_request]
+on:
+  schedule:
+    - cron: '* * * * *'  # 每分钟运行一次
 
 jobs:
   build:
